@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>RealFace - Novo Usuário</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- CSS RealFace -->
+    <link href="css/estilo.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">RealFace</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Jean Carlos <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="perfil.html"><i class="fa fa-fw fa-user"></i> Perfil</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Sair</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li>
+                        <a href="niveis.html"><i class="fa fa-fw fa-key"></i> Níveis de acesso</a>                        
+                    </li>
+                    <li>
+                        <a href="regras.html"><i class="fa fa-fw fa-users"></i> Regras</a>
+                    </li>
+                    <li>
+                        <a href="usuarios.html"><i class="fa fa-fw fa-user "></i> Usuários</a>
+                    </li>
+                    <li>
+                        <a href="camera.html"><i class="fa fa-fw fa-camera "></i> Camera</a>
+                    </li>
+                    <li>
+                        <a href="acessos.html"><i class="fa fa-fw fa-map-marker "></i> Pontos de acesso</a>
+                    </li>
+                    <li>
+                        <a href="placa.html"><i class="fa fa-fw fa-plug "></i> Placa</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#itens-acesso"><i class="fa fa-exchange"></i> Acessos <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="itens-acesso" class="collapse">
+                            <li>
+                                <a href="listar_acessos.html">Listar</a>
+                            </li>
+                            <li>
+                                <a href="relatorio_acessos.html">Relatórios</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="configuracoes.html"><i class="fa fa-fw fa-gear "></i> Configurações</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-lg-12 well">
+                        <p class="lead">Novo Usuário</p>
+                        <form role="form">
+                            <div class="row">
+                                    
+                                    <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="cad-nome">Nome</label>
+                                                <input type="text" class="form-control" id="cad-nome" name="cad-nome" placeholder="Nome" required>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label class="sr-only" for="cad-cpf">CPF</label>
+                                                        <input type="text" class="form-control" id="cad-cpf" name="cad-cpf" placeholder="CPF" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label class="sr-only" for="cad-rg">RG</label>
+                                                        <input type="text" class="form-control" id="cad-rg" name="cad-rg" placeholder="RG" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="sr-only" for="cad-email">E-mail</label>
+                                                <input type="text" class="form-control" id="cad-email" name="cad-email" placeholder="E-mail" required>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label class="sr-only" for="cad-senha">Senha</label>
+                                                        <input type="password" class="form-control" id="cad-senha" name="cad-senha" placeholder="Senha" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label class="sr-only" for="cad-verificar-senha">Verificar Senha</label>
+                                                        <input type="password" class="form-control" id="cad-verificar-senha" name="cad-verificar-senha" placeholder="Verificar Senha" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="sr-only" for="cad-endereco">Endereço</label>
+                                                <input type="text" class="form-control" id="cad-endereco" name="cad-endereco" placeholder="Endereço" required>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <select class="form-control" id="cad-estado" name="cad-estado">
+                                                            <option value="">Estado</option>
+                                                            <option value="São Paulo">São Paulo</option>
+                                                            <option value="Santa Catarina">Santa Catarina</option>
+                                                            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group" >
+                                                        <select class="form-control" id="cad-cidade" name="cad-cidade">
+                                                            <option value="">Cidade</option>
+                                                            <option value="São Paulo">São Paulo</option>
+                                                            <option value="Joinville">Joinville</option>
+                                                            <option value="Caxias do Sul">Caxias do Sul</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <textarea class="form-control" rows="3" id="cad-obs" name="cad-obs" placeholder="Observações"></textarea>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <select multiple class="form-control" id="cad-regra" name="cad-regra">
+                                                            <option value="">Selecione uma ou mais regras</option>
+                                                            <option value="Regra 1">Regra 1</option>
+                                                            <option value="Regra 2">Regra 2</option>
+                                                            <option value="Regra 3">Regra 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group" >
+                                                        <select class="form-control" id="cad-setor" name="cad-setor">
+                                                            <option value="">Setor</option>
+                                                            <option value="Setor 1">Setor 1</option>
+                                                            <option value="Setor 2">Setor 2</option>
+                                                            <option value="Setor 3">Setor 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div id="box-foto-cad" class="col-lg-12">
+
+                                                    <div id="foto-cad">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                &nbsp;
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 text-right">
+                                                <button type="button" class="btn btn-warning">Capturar imagem</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <button type="submit" class="btn btn-primary">Gravar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

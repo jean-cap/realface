@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>RealFace - Perfil</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- CSS RealFace -->
+    <link href="css/estilo.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">RealFace</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Jean Carlos <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="perfil.html"><i class="fa fa-fw fa-user"></i> Perfil</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Sair</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li>
+                        <a href="niveis.html"><i class="fa fa-fw fa-key"></i> Níveis de acesso</a>                        
+                    </li>
+                    <li>
+                        <a href="regras.html"><i class="fa fa-fw fa-users"></i> Regras</a>
+                    </li>
+                    <li>
+                        <a href="usuarios.html"><i class="fa fa-fw fa-user "></i> Usuários</a>
+                    </li>
+                    <li>
+                        <a href="camera.html"><i class="fa fa-fw fa-camera "></i> Camera</a>
+                    </li>
+                    <li>
+                        <a href="acessos.html"><i class="fa fa-fw fa-map-marker "></i> Pontos de acesso</a>
+                    </li>
+                    <li>
+                        <a href="placa.html"><i class="fa fa-fw fa-plug "></i> Placa</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#itens-acesso"><i class="fa fa-exchange"></i> Acessos <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="itens-acesso" class="collapse">
+                            <li>
+                                <a href="listar_acessos.html">Listar</a>
+                            </li>
+                            <li>
+                                <a href="relatorio_acessos.html">Relatórios</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="configuracoes.html"><i class="fa fa-fw fa-gear "></i> Configurações</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-lg-12 well">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <p class="lead">Perfil do usuário logado</p><br>
+
+                                <strong>Nome: </strong>Jean Carlos <br><br>
+                                <strong>CPF: </strong> 000.000.000-00 <br><br>
+                                <strong>RG: </strong>0.000.00 <br><br>
+                                <strong>E-mail: </strong>jeancarlosantonio@gmail.com <br><br>
+                                <strong>Endereço: </strong>Rua 9 de março, 15 <br><br>
+                                <strong>Cidade: </strong>Joinville <br><br>
+                                <strong>Observações: </strong> <br><br>
+                                <strong>Setor: </strong>Produção <br><br>
+                                <strong>Regras: </strong>Regra 1, Regra 2, Regra 3 <br><br>
+
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_alterar_usuario">Alterar</button>
+
+                            </div>
+
+                            <div class="col-lg-8">
+                                
+                                <div id="perfil_usuario_foto">
+                                    <img src="img/img_perfil.jpg" alt="Foto do perfil do usuário" class="img-thumbnail">
+                                </div>
+
+                            </div>
+
+                            <!-- INÍCIO DO MODAL -->
+                            <div class="modal fade" id="modal_alterar_usuario" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Alterar dados do usuário logado</h4>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <!-- INÍCIO DA PÁGINA INSERIDA NO MODAL -->
+                                            <div class="row">
+
+                                                <!-- INÍCIO DO FORMULÁRIO -->
+                                                <div class="col-lg-12">
+                                                    <form role="form">
+                                                        <div class="row">
+                                                            
+                                                            <!-- PRIMEIRA COLUNA -->
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group">
+                                                                    <label class="sr-only" for="cad_usuario_nome">Nome</label>
+                                                                    <input type="text" class="form-control" id="cad_usuario_nome" name="cad_usuario_nome" placeholder="Nome" required>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <div class="col-lg-6">
+                                                                        <div class="form-group">
+                                                                            <label class="sr-only" for="cad_usuario_cpf">CPF</label>
+                                                                            <input type="text" class="form-control" id="cad_usuario_cpf" name="cad_usuario_cpf" placeholder="CPF" required>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <div class="form-group">
+                                                                            <label class="sr-only" for="cad_usuario_rg">RG</label>
+                                                                            <input type="text" class="form-control" id="cad_usuario_rg" name="cad_usuario_rg" placeholder="RG" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <label class="sr-only" for="cad_usuario_email">E-mail</label>
+                                                                    <input type="text" class="form-control" id="cad_usuario_email" name="cad_usuario_email" placeholder="E-mail" required>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <div class="col-lg-6">
+                                                                        <div class="form-group">
+                                                                            <label class="sr-only" for="cad_usuario_senha">Senha</label>
+                                                                            <input type="password" class="form-control" id="cad_usuario_senha" name="cad_usuario_senha" placeholder="Senha" required>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <div class="form-group">
+                                                                            <label class="sr-only" for="cad_usuario_ver_senha">Verificar Senha</label>
+                                                                            <input type="password" class="form-control" id="cad_usuario_ver_senha" name="cad_usuario_ver_senha" placeholder="Verificar Senha" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <label class="sr-only" for="cad_usuario_endereco">Endereço</label>
+                                                                    <input type="text" class="form-control" id="cad_usuario_endereco" name="cad_usuario_endereco" placeholder="Endereço" required>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-lg-6">
+                                                                        <div class="form-group">
+                                                                            <select class="form-control" id="cad_usuario_estado" name="cad_usuario_estado">
+                                                                                <option value="">Estado</option>
+                                                                                <option value="São Paulo">São Paulo</option>
+                                                                                <option value="Santa Catarina">Santa Catarina</option>
+                                                                                <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <div class="form-group" >
+                                                                            <select class="form-control" id="cad_usuario_cidade" name="cad_usuario_cidade">
+                                                                                <option value="">Cidade</option>
+                                                                                <option value="São Paulo">São Paulo</option>
+                                                                                <option value="Joinville">Joinville</option>
+                                                                                <option value="Caxias do Sul">Caxias do Sul</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <textarea class="form-control" rows="3" id="cad-obs" name="cad-obs" placeholder="Observações"></textarea>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <div class="col-lg-6">
+                                                                        <div class="form-group">
+                                                                            <select multiple class="form-control" id="cad_usuario_regra" name="cad_usuario_regra">
+                                                                                <option value="">Selecione as regras</option>
+                                                                                <option value="Regra 1">Regra 1</option>
+                                                                                <option value="Regra 2">Regra 2</option>
+                                                                                <option value="Regra 3">Regra 3</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <div class="form-group" >
+                                                                            <select class="form-control" id="cad_usuario_setor" name="cad_usuario_setor">
+                                                                                <option value="">Setor</option>
+                                                                                <option value="Setor 1">Setor 1</option>
+                                                                                <option value="Setor 2">Setor 2</option>
+                                                                                <option value="Setor 3">Setor 3</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- SEGUNDA COLUNA -->
+                                                            <div class="col-lg-6">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12">
+                                                                        <div id="box-foto-cad" class="col-lg-12">
+
+                                                                            <div id="foto-cad">
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-lg-12">
+                                                                        &nbsp;
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-lg-12 text-right">
+                                                                        <button type="button" class="btn btn-warning">Capturar imagem</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <!-- FIM DO FORMULÁRIO -->
+
+                                            </div>
+                                            <!-- FIM DA PÁGINA INSERIDA NO MODAL -->
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                            <button type="button" class="btn btn-primary">Gravar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FIM DO MODAL -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

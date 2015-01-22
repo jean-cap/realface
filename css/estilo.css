@@ -1,0 +1,81 @@
+/* --------------------- Estilos gerais ---------------------- */
+
+textarea {
+    resize: none;
+}
+
+/* ---------------- Estilos da tela de login ---------------- */
+
+#box-foto-login, #box-logo-login {
+	width: 100%;
+}
+
+#box-foto-login>div {
+	width: 99%;
+	margin: 2em auto 2em;
+	padding: 2em;
+	border-radius: 0.375em;
+	background-color: #222;
+}
+
+#box-logo-login>div {
+	width: 99%;
+	margin: 0em auto 0em;
+	padding: 2em;
+	border-radius: 0.375em;
+	background-color: #FFF;
+}
+
+#foto-login {
+	width: 216px;
+	height: 288px;
+	margin: 0em auto;
+	background-color: #ccc;
+}
+
+/* ---------------- Estilos da tela de níveis ---------------- */
+
+.form-inline .form-group #nivel {
+    width: 5em;
+    margin-right: 1em;
+}
+
+.form-inline .form-group #nome-nivel {
+    margin-right: 1em;
+    width: 15em;
+}
+
+/* ---------------- Estilos da tela de regras ---------------- */
+
+.form-inline .form-group #denominacao-regra {
+    width: 15em;
+    margin-right: 1em;
+}
+
+.form-inline .form-group #descricao-regra {
+    margin-right: 1em;
+    width: 40em;
+}
+
+/* --------- Estilos da tela de cadastro de usuários --------- */
+
+#box-foto-cad, #box-logo-cad {
+	width: 100%;
+	padding-top: 1.7em;
+	padding-bottom: 1.7em;
+	border-radius: 0.375em;
+	background-color: #222;
+}
+
+#foto-cad {
+	width: 216px;
+	height: 288px;
+	margin: 0em auto;
+	background-color: #ccc;
+}
+
+/* ---------- Estilos da tela de perfil de usuários ---------- */
+
+#perfil_usuario_foto {
+	width: 216px;
+}
